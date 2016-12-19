@@ -36,7 +36,7 @@ body:after {
   opacity: 0.4;
   background-image: url('https://thepostculture.files.wordpress.com/2013/02/enhanced-buzz-8902-1359526583-10.jpg');
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: bottom center;
     -ms-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
