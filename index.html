@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>javascript drum kitten</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
 </head>
 <body>
-  <h1>Javascript<br> Drum Kitten</h1>
+  <h1>Javascript Drum Kitty</h1>
   <div class="keys">
+    <!-- the divs below use data attributes,
+    which are a way to store extra information about elements.
+    (https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes)-->
     <div data-key="65" class="key">
       <kbd>A</kbd>
       <span class="sound">angry</span>
@@ -47,15 +51,17 @@
     </div>
   </div>
 
+  <!-- HTML5 audio elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)-->
   <audio data-key="65" src="sounds/angry_cat.mp3"></audio>
   <audio data-key="83" src="sounds/whiny_cat.mp3"></audio>
   <audio data-key="68" src="sounds/demandy_cat.mp3"></audio>
-  <audio data-key="70" src="sounds/demandy_cat.mp3"></audio>
+  <audio data-key="70" src="sounds/friendly_cat.mp3"></audio>
   <audio data-key="71" src="sounds/grumpy_cat.mp3"></audio>
   <audio data-key="72" src="sounds/hungry_cat.mp3"></audio>
   <audio data-key="74" src="sounds/chatty_cat.mp3"></audio>
   <audio data-key="75" src="sounds/kitten_cat.mp3"></audio>
-  <audio data-key="76" src="sounds/tink.wav"></audio>
+  <audio data-key="76" src="sounds/purry_cat.mp3"></audio>
 
+  <script src="main.js"></script>
 </body>
 </html>
