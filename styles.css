@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: snow;
+}
+
+body {
+  height: 100vh;
+  border: 0.6vw solid #fafafa;
+  outline: 0.3vw solid #fafafa;
+  outline-offset: -1.5vw;
+  padding: 3vw;
+  overflow: hidden;
+  text-align: center;
+  background: url(https://thepostculture.files.wordpress.com/2013/02/enhanced-buzz-8902-1359526583-10.jpg) bottom center;
+  background-size: cover;
+}
+
+h1 {
+  width: 33vw;
+  margin: 2vw auto;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  color:#525c5c;
+  background: rgba(250,250,250, 0.95);
+  /*border: 4px solid #fafafa;*/
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.keys {
+  display:flex;
+  /*flex:1;*/
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 25vh;
+  justify-content: space-between;
+}
+
+.key {
+  margin:0.33rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  transition:all .07s;
+  width:10%;
+  flex-grow:1;
+  text-align: center;
+  color:#525c5c;
+  background: rgba(250,250,250, 0.7);
+  border: 4px solid #fafafa;
+}
+
+.playing {
+  transform:scale(1.1);
+  border-color:#a25076;
+  box-shadow: 0 0 10px #a25076;
+}
+
+kbd {
+  display: block;
+  font-size: 40px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+}
+
+.sound {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color:#a25076;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1023px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .key {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    width: 90vw;
+  }
+
+  .key {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
